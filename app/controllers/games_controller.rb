@@ -29,23 +29,4 @@ class GamesController < ApplicationController
     json = JSON.parse(response.read)
     json['found']
   end
-
-  # def score
-  #   @word = params[:word].upcase
-  #   url = open("https://wagon-dictionary.herokuapp.com/#{@word}")
-  #   doc = Nokogiri::HTML(url)
-  #   @result = JSON.parse(doc)
-
-  #   if @result['found'] == false
-  #     @not_found = "Sorry, but #{@word} is not a valid word"
-  #   end
-  #   raise
-  # end
-
-  # # private
-
-  # # def random_letters
-  # #   letters_arr = *('A'..'Z')
-  # #   @letters = letters_arr.sample(10)
-  # # end
 end
